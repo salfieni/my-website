@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+<body style="background-color:powderblue;">
+
+<p>HELLO</p>
+<p style="color:blue;">salfieni</p>
+<p style="color:red;">UITM MERBOK</p> 
+<h1>Emoji</h1>
+
+<h2>&#128512;</h2>
+
+
+<h2>My favourite flower</h2>
+<img src="sakura.jpg" >
+
+<h1>My Location, Clock, and Date</h1>
+
+  <div class="info" id="location">Fetching location...</div>
+<h1>My Location</h1>
+    <div>
+        <!-- Google Maps Embed -->
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126944.20711420872!2d-74.00601508492247!3d40.71272809999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDE2JzA3LjgiTiA3NMKwMDYnMzIuMiJX!5e0!3m2!1sen!2sus!4v1632828672114!5m2!1sen!2sus" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+  <div class="info" id="date"></div>
+  <div class="info" id="clock"></div>
+
+  <div id="map"></div>
+
+  <script>
+    // CLOCK & DATE
+    function updateDateTime() {
+      const now = new Date();
+      document.getElementById('clock').textContent = now.toLocaleTimeString();
+      document.getElementById('date').textContent = now.toDateString();
+    }
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+
+</body>
+</html>
+

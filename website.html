@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<body style="text-align: center;">
+
+    <h1 style="background-color: lightblue;padding: 10px 20px;">
+        Hello and Welcome
+    </h1>
+<style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: BlanchedAlmond;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 30px;
+        }
+        .navbar ul li {
+            display: inline;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+            font-size: 18px;
+        }
+        .navbar ul li a:hover {
+            color: #6c63ff; /* purple color when hover */
+        }
+    </style>
+</head>
+<body>
+ <div class="navbar">
+        <div class="logo">Salfieni</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#goals">Goals</a></li>
+        </ul>
+    </div>
+<meta charset="UTF-8">
+  <title>Homepage</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    #home {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100vh;
+      width: 100%;
+      background-image: url('bg home.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      text-align: center;
+      padding: 60px;
+      font-family:roboto;
+    }
+
+    .about-text h2 {
+      font-size: 2em;
+      margin: 0;
+    }
+
+    .about-text p {
+      font-size: 1.2em;
+    }
+
+    #datetime {
+      margin-top: 20px;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+
+  <section id="home">
+    <div class="about-text">
+<audio controls autoplay>
+  <source src="only.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+      <h2>College of Computing, Informatics and Mathematics</h2>
+      <p>INTRODUCTION TO WEB CONTENT MANAGEMENT AND DESIGN</p>
+      <div id="datetime"></div>
+    </div>
+  </section>
+
+  <script>
+    function updateDateTime() {
+      const now = new Date();
+      const dateTimeString = now.toLocaleString(); // shows date and time
+      document.getElementById('datetime').textContent = dateTimeString;
+    }
+
+    setInterval(updateDateTime, 1000); // update every second
+    updateDateTime(); // initial call
+  </script>
+
+</p>
+
+ </div>
+<body style="background-color:lightblue;">
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+</head>
+
+</html>
+</section> 
+<section id="profile" style="text-align: center;flex: 1;font-size:100%;color:white;"></section>
+    <h3>Profile</h3>
+<title>Profile Page</title>
+  <section id="profile" class="profile-section">
+  <style>
+    .profile-section {
+      position: relative;
+      padding: 100px 40px;
+      text-align: center;
+      color: #2c3e50;
+      background-color:lightblue;
+    }
+
+    .profile-text {
+      max-width: 600px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.8;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .polaroid {
+      position: absolute;
+      width: 120px;
+      padding: 10px;
+      background: white;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    }
+
+    .polaroid img {
+      width: 100%;
+      display: block;
+    }
+
+    .polaroid1 { top: 20px; left: 10%; transform: rotate(-8deg); }
+    .polaroid2 { top: 100px; right: 15%; transform: rotate(6deg); }
+    .polaroid3 { bottom: 30px; left: 18%; transform: rotate(4deg); }
+  </style>
+
+  <!-- Profile Content -->
+  <div class="profile-text">
+    <h3>Profile</h3>
+    <p><strong>Name:</strong> Salfieni@Fini</p>
+    <p><strong>Age:</strong> 21 Years old</p>
+    <p><strong>Birthday:</strong> 21 December 2004</p>
+    <p><strong>Hometown:</strong> Kampar, Perak</p>
+    <p><strong>Fav food:</strong> Laksa</p>
+    <p><strong>Fav colour:</strong> Blue</p>
+    <p><strong>Hobbies:</strong> Watching Korean drama</p>
+  </div>
+
+  <!-- Polaroid Images -->
+  <div class="polaroid polaroid1"><img src="fini.jpg" alt="Photo 1"></div>
+  <div class="polaroid polaroid2"><img src="pini.jpg" alt="Photo 2"></div>
+  <div class="polaroid polaroid3"><img src="gurl.jpg" alt="Photo 3"></div>
+</section>
+  <!-- Up Button -->
+  <button onclick="scrollUp()" style="position: fixed; right: 20px; bottom: 80px; width: 50px; height: 50px; border-radius: 50%; border: none; background-color: blue; color: white; font-size: 24px;">↑</button>
+
+  <!-- Down Button -->
+  <button onclick="scrollDown()" style="position: fixed; right: 20px; bottom: 2px; width: 50px; height: 50px; border-radius: 50%; border: none; background-color: blue; color: white; font-size: 24px;">↓</button>
+</body>
+
+<script>
+  function scrollUp() {
+    window.scrollBy({ top: -window.innerHeight, behavior: 'smooth' });
+  }
+
+  function scrollDown() {
+    window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
+  }
+</script>
+
+      </section>
+    </section>
+<section style="background-color:rgba(255, 255, 255, 0.8);padding: 10px 20px;"> 
+<section id="education" style="text-align: center;font-size:200%;color:#2c3e50;">
+ <style>
+table {
+  font-family: Roboto;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #001F3F;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Education</h2>
+
+<table>
+  <tr>
+    <th>Primary school</th>
+    <th>Secondary school</th>
+    <th>Currently</th>
+  </tr>
+  <tr>
+    <td>SK DE LA SALLE</td>
+    <td>SMK SERI KAMPAR</td>
+    <td>UITM MERBOK</td>
+  </tr>
+  <tr>
+    <td><img src="primary.jpg" alt="My Picture" style="width: 300px;height: auto; margin-right: 30px;"></td>
+    <td><img src="sec.jpg" alt="My Picture" style="width: 300px;height: auto; margin-right: 30px;"></td>
+    <td><img src="uitm.jpg" alt="My Picture" style="width: 300px;height: auto; margin-right: 30px;"></td>
+  </tr>
+</table>
+      </section>
+    </section>
+
+<section id="interests" style="padding: 60px 20px; background-color:lightblue; text-align: center;">
+  <h2 style="font-size: 200%; color:#2c3e50 ; margin-bottom: 40px;">INTERESTS</h2>
+
+  <style>
+    .card {
+      color: #F2DCDC;
+      position: relative;
+      margin: 60px auto;
+      width: 80%;
+      max-width: 1000px;
+      box-shadow: 0 4px 10px #F2DCDC;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .card img {
+      color: #F2DCDC
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .text-box {
+      position: absolute;
+      background: white;
+      padding: 20px;
+      max-width: 400px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      border-radius: 8px;
+      text-align: left;
+    }
+
+    .card:nth-child(odd) .text-box {
+      top: 20px;
+      right: 20px;
+    }
+
+    .card:nth-child(even) .text-box {
+      bottom: 20px;
+      left: 20px;
+    }
+
+    .text-box h3 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+
+    .text-box p {
+      margin: 0;
+      color: #2c3e50;
+    }
+  </style>
+
+  <div class="card">
+<video width="400" controls>
+  <source src="baking.mp4" type="video/mp4">
+  Your browser does not support HTML video.
+</video>
+    <div class="text-box">
+    <h3>Learning Baking cookies</h3>
+  <img src="chipscoo.jpg" alt="Chipchocolate cookies" style="width: 100px;">
+      <p>I enjoy exploring different recipes and tasting cookies.</p>
+</div>
+</section>
+</section>
+
+<section id="goals" class="goals-section">
+  <style>
+      .goals-section {
+      background: BlanchedAlmond;
+      padding: 100px 20px;
+      text-align: center;
+      font-family: Roboto, sans-serif;
+      color:#d16ba5;
+    }
+
+    .goals-container {
+      font-size: 20px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+      border-radius: 25px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .goals-title {
+      font-size: 50px;
+      margin-bottom: 20px;
+      color: #d16ba5;
+    }
+
+    .goals-text {
+      font-size: 400px;
+      line-height: 1.8;
+    }
+
+    .heart-icon {
+      font-size: 30px;
+      color: #ff6f91;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+  </style>
+
+  <div class="goals-container">
+    <div class="heart-icon">♥</div>
+    <h3 class="goal-title">My Goal</h3>
+    <p class="goal-text">
+      My goal is to grow as a person, stay positive, and never stop learning! I want to explore new things, try different experiences, and always chase my dreams to make my parents proud of me.
+    </p>
+    <div class="heart-icon">♥</div>
+  </div>
+</section>
+
+        
+</body>
+</html>
